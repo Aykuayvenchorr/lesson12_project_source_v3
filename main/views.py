@@ -32,3 +32,5 @@ def search_page():
 @main_blueprint.errorhandler(DataSourceBrokenError)
 def data_source_broken_error(e):
     return "Файл с данными поврежден"
+
+

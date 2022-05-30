@@ -50,3 +50,4 @@ def error_format(e):
 @loader_blueprint.errorhandler(PictureNotUploadedError)
 def error_format(e):
     return f"Не удалось загрузить картинку {e}"
+

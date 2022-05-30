@@ -1,4 +1,6 @@
 import logging
+import os
+
 from flask import Flask, send_from_directory
 
 from main.views import main_blueprint
@@ -25,3 +27,5 @@ def static_dir(path):
 if __name__ == "__main__":
     logger.info("Приложение запускается")
     app.run(debug=True)
+
+
