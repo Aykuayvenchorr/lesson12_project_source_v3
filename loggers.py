@@ -1,4 +1,12 @@
 import logging
+import os
+
+project_path = os.getcwd()
+
+file_path = "\\logs\\basic.txt"
+
+full_path = project_path + file_path
+
 
 
 def create_logger():
@@ -6,7 +14,7 @@ def create_logger():
     logger.setLevel("DEBUG")
 
     console_handler = logging.StreamHandler()
-    file_handler = logging.FileHandler("D:\Python курсы\ДЗ_12\logs\\basic.txt")
+    file_handler = logging.FileHandler(full_path)
 
     logger.addHandler(console_handler)
     logger.addHandler(file_handler)

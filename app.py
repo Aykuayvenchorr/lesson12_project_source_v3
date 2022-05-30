@@ -26,6 +26,6 @@ def static_dir(path):
 
 if __name__ == "__main__":
     logger.info("Приложение запускается")
-    app.run(debug=True)
+    app.run(debug=True, port=1234)
 
 
